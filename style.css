@@ -1,0 +1,9 @@
+body, html { 
+    width: 100%;
+    background-color: red;
+}
+
+.container {
+    background-color: red;
+}
+
