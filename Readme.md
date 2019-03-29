@@ -1,0 +1,1 @@
+This is just a test side for the FCC challenge. Made only with html, css and js. Without boostrap. Main purpose is to learn css grid.
