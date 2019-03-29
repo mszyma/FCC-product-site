@@ -1,9 +1,44 @@
-body, html { 
-    width: 100%;
-    background-color: red;
+html, body {
+    box-sizing: border-box;
+    background-color: #ffeead;
+    height: 100%;
+    padding: 10px;
+    margin: 0px;
 }
 
 .container {
-    background-color: red;
+    height: 100%;
+    background-color: grey;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 80px auto 100px;
 }
 
+.container > div {
+    display: flex;
+    font-size: 2em;
+    color: #ffeead;
+}
+
+.header {
+    grid-column: 1 / -1; 
+    background-color: blue;  
+    display: flex;
+    padding: 10px 20px;
+}
+
+.header > .header-icon {
+    display: flex;
+    
+}
+
+.item {
+    grid-column: 1 / -1;
+    background-color: aqua;
+}
+
+.footer {
+    grid-column: 1 / -1;
+    background-color: salmon;
+}
