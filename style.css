@@ -38,8 +38,15 @@ header > .nav-bar > .logo {
     padding: 10px 20px;
 }
 
+.nav-link  a{
+    text-decoration: none;
+    color: black;
+}
+
 .content {
     grid-column: 1 / -1;
+    max-height: 700px;
+    min-height: 500px;
 }
 
 .footer {
@@ -48,16 +55,17 @@ header > .nav-bar > .logo {
 
 .hero {
     display: grid;
-    max-height: 600px;
-    padding-top: 50px;
     grid-template-columns: repeat(12, 1fr); 
+    min-height: 500px;
 }
 
 .hero-text {
     grid-column: 2 / 6;
     font-size: 4rem;
+    align-self: center;
 }
 
 .app-image {
     grid-column: 7/ 12;
+    align-self: end;
 }
