@@ -9,9 +9,9 @@ html, body {
 .container {
     height: 100%;
     display: grid;
-    grid-gap: 2px;
+    grid-gap: 20px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 80px auto 100px;
+    grid-template-rows: 80px auto auto auto auto;
 }
 
 .container > div, header {
@@ -43,14 +43,15 @@ header > .nav-bar > .logo {
     color: black;
 }
 
+.nav-link  a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
 .content {
     grid-column: 1 / -1;
     max-height: 700px;
     min-height: 500px;
-}
-
-.footer {
-    grid-column: 1 / -1;
 }
 
 .hero {
@@ -68,4 +69,65 @@ header > .nav-bar > .logo {
 .app-image {
     grid-column: 7/ 12;
     align-self: end;
+}
+
+.features {
+    display: grid;
+    grid-column: 1 / -1;
+    min-height: auto;
+}
+
+.features .trusted{
+    display: grid;
+    grid-gap: 30px;
+    padding-top: 3rem; 
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 3rem 3rem;
+    grid-column: 1 / -1;
+}
+
+.features .trusted h4 {
+    grid-column: 3;
+    justify-self: center;
+} 
+.features .trusted .partner{
+    grid-row: 2;
+    justify-self: center;
+}
+
+.features .feature-header {
+    padding-top: 6rem;
+    justify-self: center;
+}
+
+.features .feature-header h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.features .feature-header p {
+    font-size: 1.2rem;
+    color: grey;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 4rem;
+}
+
+.features .feature-header .clip {
+    text-align: center;
+}
+
+.pricing {
+    display: grid;
+    grid-column: 1 / -1;
+    background-color: beige;
+    min-height: auto;
+}
+
+
+.footer {
+    display: grid;
+    grid-column: 1 / -1;
+    background-color: beige;
+    min-height: 5rem;
 }
