@@ -1,44 +1,63 @@
 html, body {
     box-sizing: border-box;
-    background-color: #ffeead;
     height: 100%;
     padding: 10px;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
     height: 100%;
-    background-color: grey;
     display: grid;
     grid-gap: 2px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 80px auto 100px;
 }
 
-.container > div {
-    display: flex;
-    font-size: 2em;
-    color: #ffeead;
+.container > div, header {
+    font-size: 1em;
+    padding: 10px 20px;
 }
 
 .header {
     grid-column: 1 / -1; 
-    background-color: blue;  
     display: flex;
+}
+
+header > .nav-bar {
+    margin-left: auto;
+    display: flex;
+}
+
+header > .nav-bar > .logo {
+    text-align: start;
     padding: 10px 20px;
 }
 
-.header > .header-icon {
-    display: flex;
-    
+.nav-link {
+    padding: 10px 20px;
 }
 
-.item {
+.content {
     grid-column: 1 / -1;
-    background-color: aqua;
 }
 
 .footer {
     grid-column: 1 / -1;
-    background-color: salmon;
+}
+
+.hero {
+    display: grid;
+    max-height: 600px;
+    padding-top: 50px;
+    grid-template-columns: repeat(12, 1fr); 
+}
+
+.hero-text {
+    grid-column: 2 / 6;
+    font-size: 4rem;
+}
+
+.app-image {
+    grid-column: 7/ 12;
 }
