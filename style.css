@@ -161,11 +161,59 @@ header > .nav-bar > .logo {
 }
 
 .pricing {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-column: 1 / -1;
-    background-color: beige;
     min-height: auto;
+    justify-content: center;
 }
+
+.pricing-header {
+    width: 100%;
+    font-size: 3rem;
+    justify-self: center;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.card {
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    border: 1px solid #535BFE; 
+    border-radius: 10px; 
+}
+
+.card-header {
+    background: rgba(83, 91, 254, 0.05) !important;
+    margin: 0px;
+    padding: 1rem;
+    color: #535BFE;
+}
+
+.card-price {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 5rem;;
+}
+
+li {
+    text-align: left;
+}
+
+button {
+    color: #535BFE;
+    padding: 1rem;
+    background: rgba(83, 91, 254, 0.05) !important;
+    border-radius: 10px;
+    margin: 1rem 0;
+    width: 10rem;
+}
+
 
 
 .footer {
