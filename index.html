@@ -12,14 +12,14 @@
         <header class="header" id="header">
                 <div class="logo" ><img id="header-img" src="img/logo.jpg" alt="Logo"></div>
                 <nav class="nav-bar" id="nav-bar">
-                    <div class="nav-link"><a href="#">Home</a></div>
-                    <div class="nav-link"><a href="#">Features</a></div>
-                    <div class="nav-link"><a href="#">Pricing</a></div>
-                    <div class="nav-link"><a href="#">Contact</a></div>
+                    <li><a class="nav-link" href="#content">Home</a></li>
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
                 </nav>
             </header>
     <div class="container">
-        <div class="content">
+        <div class="content" id="content">
             <div class="hero">
                     <h1 class="hero-text">The best scouting app on the market.</h1>
                     <div class="app-image"><img src="/img/mobile-app-1.jpg" alt="App image"></div>
@@ -27,7 +27,7 @@
 
         </div>
 
-        <div class="features">
+        <div class="features" id="features">
             <div class="trusted">
                 <h4>Trusted by</h4>
                 <div class="partner"><img src="//logo.clearbit.com/spotify.com?size=70&greyscale=true"></div>
@@ -57,7 +57,7 @@
             </div>
         </div>
         
-        <div class="pricing">
+        <div class="pricing" id="pricing">
             <h2 class="pricing-header">Pricing</h2>
             <div class="card">
                 <h3 class="card-header">Standard</h3>
@@ -93,7 +93,7 @@
                 <button>Sign up</button>
             </div>
         </div>
-        <div class="contact">
+        <div class="contact" id="contact">
             <h2 class="pricing-header">Please concact us:</h2>
             <form action="https://www.freecodecamp.com/email-submit" id="form">
             <fieldset>
@@ -103,7 +103,7 @@
                 <input type="email" name="email" id="email" placeholder="mariusz@szyma.co" required>
                 <label for="message">Message</label>
                 <input type="textarea" name="textarea" placeholder="Please type your message" id="textarea">
-                <button type="submit" class="submit">Submit</button>
+                <input type="submit" class="submit" id="submit"></input>
             </fieldset>
             </form>
         </div>

@@ -48,12 +48,12 @@ header > .nav-bar {
     color: aliceblue;   
 }
 
-.nav-link  a{
+.nav-link {
     text-decoration: none;
     color: aliceblue;
 }
 
-.nav-link  a:hover {
+.nav-link:hover {
     text-decoration: none;
     color: blue;
 }
@@ -211,6 +211,7 @@ ul {
 
 li {
     text-align: left;
+    list-style: none
 }
 
 button {
@@ -262,6 +263,15 @@ input {
 
 .submit {
     float: right;
+}
+
+.submit {
+    color: #535BFE;
+    padding: 1rem;
+    background: rgba(83, 91, 254, 0.05) !important;
+    border-radius: 10px;
+    margin: 1rem 0;
+    width: 10rem;
 }
 
 .footer {
