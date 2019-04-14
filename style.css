@@ -222,7 +222,47 @@ button {
     width: 10rem;
 }
 
+.contact {
+    grid-column: 1/-1;
+    justify-self: center;
+}
 
+#form {
+    width: 100%;
+    border: none;
+}
+
+fieldset {
+    border: none;   
+}
+
+fieldset > label, input:not(#textarea) {
+    box-sizing: border-box;
+    display: block;
+
+    padding: 10px;
+}
+
+input {
+    width: 100%;
+}
+
+#textarea {
+    box-sizing: border-box;
+    height: 6rem;
+    border: none;   
+    border-bottom: 1px  #535BFE dotted;
+    padding: 10px;
+}
+
+#email, #name {
+    border: none;
+    border-bottom: 1px  #535BFE dotted;
+}
+
+.submit {
+    float: right;
+}
 
 .footer {
     display: flex;
@@ -234,4 +274,12 @@ button {
 
 .footer > * {
     padding: 10px 20px;
+}
+
+.foo > a{
+    text-decoration: none;
+}
+
+.foo > a:hover {
+    color: #535BFE;
 }
