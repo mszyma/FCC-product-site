@@ -5,6 +5,12 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+img, .clip {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
 .container {
     height: 100%;
     display: grid;
@@ -292,4 +298,51 @@ input {
 
 .foo > a:hover {
     color: #535BFE;
+}
+
+
+@media (max-width: 750px) {
+    .hero, .content, .header {
+        display: block; 
+    }
+    .features {
+        padding-top: 30px !important;
+        display: block; 
+    }
+    .trusted {
+        padding-top: 200px;
+    }
+    .hero-text {
+        font-size: 2rem;
+    }
+
+    .nav-bar {
+        justify-content: center !important;
+    }
+
+    .logo {
+        text-align: center 
+    }
+    .small-features {
+        grid-template-columns: 1fr 1fr 1fr !important;
+        grid-gap: 20px;
+    }
+
+    .item-1, .item-2, .item-3 {
+        grid-column: auto !important;
+    }
+
+    .feature-header {
+        padding-top: 30px !important;
+    }
+
+    iframe {
+        width: 100% !important;
+    }
+
+    .card {
+        margin-bottom: 2rem;
+    }
+
+    
 }
