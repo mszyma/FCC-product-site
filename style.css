@@ -10,7 +10,7 @@ html, body {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(12, 1fr);
-    margin-top: 4rem;
+    margin-top: 9rem;
 }
 
 .container > div, header {
